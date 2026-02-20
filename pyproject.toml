@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "allbus2023-ddr-legacy"
+version = "0.1.0"
+description = "ALLBUS 2023: GDR legacy project"
+authors = ["Polina Ianina <polina.ianina1@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "src" }]
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.13"
+pandas = "^2.3.0"
+numpy = "^2.4.1"
+pyreadstat = "^1.3.3"
+pyarrow = "^23.0.0"
+matplotlib = "^3.10.8"
+scipy = "^1.17.0"
+statsmodels = "^0.14.6"
+scikit-learn = ">=1.0,<1.7"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.30.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
